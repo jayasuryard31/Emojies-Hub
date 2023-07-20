@@ -1,6 +1,5 @@
-const apiUrl = 'https://emojihub.yurace.pro/api/all'; // Replace this with the actual API URL if available
+const apiUrl = 'https://emojihub.yurace.pro/api/all';
 
-// Mock API response for demonstration
 const mockApiResponse = [
   {
     name: 'Smiling Face',
@@ -50,7 +49,6 @@ const mockApiResponse = [
     group: 'flag',
     htmlCode: '&#x1F1FA;&#x1F1F8;',
   },
-  // Add more emojis here
   {
     name: 'Thinking Face',
     category: 'smileys',
@@ -146,12 +144,6 @@ function updatePaginationButtons(totalPages) {
 
 async function fetchEmojis() {
   try {
-    // Use fetch to get emojis from the API (Replace apiUrl with the actual API URL if available)
-    // const response = await fetch(apiUrl);
-    // const data = await response.json();
-    // const emojis = data;
-    
-    // For demonstration, using the mockApiResponse
     const emojis = mockApiResponse;
 
     const categoryFilter = document.getElementById('category-select');
