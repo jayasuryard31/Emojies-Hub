@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Emoji Hub</h1>
+    <div class="category-filter">
+      <label for="category-select">Filter by category:</label>
+      <select id="category-select">
+        <option value="all">All</option>
+        <option value="smileys">Smileys & Emotion</option>
+        <option value="animals">Animals & Nature</option>
+        <!-- Add other categories here -->
+        <option value="food">Food & Drink</option>
+        <option value="travel">Travel & Places</option>
+        <option value="activities">Activities</option>
+        <option value="objects">Objects</option>
+        <option value="symbols">Symbols</option>
+        <option value="flags">Flags</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div id="emoji-container"></div>
+    <div class="pagination">
+      <button id="prev-btn" disabled>Previous</button>
+      <span id="page-number">Page 1</span>
+      <button id="next-btn">Next</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
